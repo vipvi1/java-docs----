@@ -329,7 +329,7 @@ public class SamplesTest {
     // create high severity note
     Note newNote = Note.newBuilder()
         .setVulnerability(VulnerabilityNote.newBuilder()
-            .setSeverity(Severity.CRITICAL)
+            .setEffectiveSeverity(Severity.CRITICAL)
             .addDetails(VulnerabilityNote.Detail.newBuilder()
                 .setAffectedCpeUri("your-uri-here")
                 .setAffectedPackage("your-package-here")
